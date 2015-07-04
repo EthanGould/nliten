@@ -1,3 +1,11 @@
+body {
+	/*background: linear-gradient( 45deg, #DD4B39, #F9EDBE);*/
+	background-image: url(../images/brick-backdrop.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
 .site-container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -17,11 +25,12 @@
 
 	color: white;
 	font-size: 200%;
-	font-family: 'Arimo', sans-serif;
-	font-weight: 700;
-	letter-spacing: 20px;
+	/*font-family: 'Arimo', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+	letter-spacing: 24px;
 	text-transform: uppercase;
-	text-shadow: -2px 0px 10px pink;
+	text-shadow: -2px 0px 12px pink;
 }
 
 .nav-hamburger {
@@ -52,11 +61,15 @@
 	margin-top: 6px;
 }
 
+.nav-list-item.nav-list-item-line {
+	border: none;
+	padding: 0;
+}
+
 .nav-list {
 	margin: 0;
 	padding: 0 10px;
 	list-style: none;
-	background-color: black;
 	display: none;
 }
 
@@ -67,6 +80,8 @@
 	color: white;
 	font-family: 'Arimo', sans-serif;
 	font-weight: 400;
+	font-size: 80%;
+	text-transform: uppercase;
 }
 
 .nav-list-social {
@@ -101,16 +116,14 @@
 
 
 .page-section {
-	background: -webkit-linear-gradient(#DD4B39, #F9EDBE); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#DD4B39, #F9EDBE); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#DD4B39, #F9EDBE); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#DD4B39, #F9EDBE); /* Standard syntax (must be last) */
+	background-color: black;
+	height: 900px;
 }
 
 .video-area-container {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 20% 0;
+	padding: 5% 0;
 	box-sizing: border-box;
 }
 
@@ -132,7 +145,84 @@
 
 
 
+@media (min-width: 786px) {
 
+	.site-header {
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.site-header p {
+		padding: 0 20%;
+		box-sizing: border-box;
+		margin-right: -40px;
+
+		font-size: 350%;
+		text-align: center;
+		text-shadow: none;
+		letter-spacing: 40px;
+	}
+
+	.nav-hamburger {
+		display: none;
+	}
+
+	.nav-container {
+		padding: 0 30%;
+		/*background-color: black;*/
+	}
+
+	.nav-list {
+		display: block !important;
+		padding: 0;
+
+		text-align: center;
+	}
+
+	.nav-list-item {
+		display: inline-block;
+		border: none;
+		
+		transition: color 0.2s linear;
+		text-align: left;
+	}
+
+	.nav-list-item:hover {
+		color: red;
+	}
+
+	.nav-list-item.nav-list-item-line {
+		padding: 5px;
+		border-left: 1px solid white;
+		margin-left: 10px;
+		margin-bottom: -5px;
+		height: 10px
+	}
+
+/*	.nav-list-item:not(:last-child) {
+		width: 15%;
+	}*/
+
+	.nav-list-item:last-child {
+		/*float: right;*/
+	}
+
+	.nav-list-social {
+		padding: 0;
+	}
+
+	.nav-list-social-item {
+		margin: 0;
+		padding-right: 10px;
+		box-sizing: border-box;
+		height: auto;
+	}
+
+	.video-area-container {
+		width: 70%
+	}
+
+}
 
 
 
