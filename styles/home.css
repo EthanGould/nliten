@@ -1,14 +1,38 @@
 body {
-	/*background: linear-gradient( 45deg, #DD4B39, #F9EDBE);*/
-	background-image: url(../images/brick-backdrop.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+
 	margin: 0;
 }
 
+.background-video {
+	background-image: url('../images/brick-backdrop.jpg');
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .site-container {
-	max-width: 960px;
-	margin: 0 auto;
+	display: inline-block;
+}
+
+.page-section { 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.header-nav-container {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+	top: 0;
 }
 
 .site-header {
@@ -16,27 +40,32 @@ body {
 	margin: 0 auto;
 	position: relative;
 	padding: 5px 0;
-	background-color: black;
+	background-color: white;
+}
+
+.nliten-logo {
+	width: 45px;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 
 .site-header p {
 	margin: 0;
-	padding-left: 7%;
 
-	color: white;
+	color: black;
 	font-size: 200%;
 	/*font-family: 'Arimo', sans-serif;*/
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 100;
 	letter-spacing: 24px;
 	text-transform: uppercase;
-	text-shadow: -2px 0px 12px pink;
+	/*text-shadow: -2px 0px 12px pink;*/
 }
 
 .nav-hamburger {
 	width: 35px;
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	right: 10px;
 
 	background: -webkit-linear-gradient(#DD4B39, #F9EDBE); /* For Safari 5.1 to 6.0 */
@@ -53,7 +82,7 @@ body {
 	width: 100%;
 	height: 5px;
 	margin: 0 auto;
-	background-color: black;
+	background-color: white;
 	display: block;
 }
 
@@ -75,13 +104,16 @@ body {
 
 .nav-list-item {
 	padding: 5px;
-	border-top: 1px solid white;
+	border-top: 1px solid black;
+}
 
-	color: white;
+.nav-list-item  a {
+	color: black;
 	font-family: 'Arimo', sans-serif;
 	font-weight: 400;
 	font-size: 80%;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .nav-list-social {
@@ -99,12 +131,42 @@ body {
 	display: inline-block;
 }
 
-#fb-icon, #ig-icon {
+/*.advance-section {
+	width: 75px;
+	height: 25px;
+	margin: 0 auto;
+	background-color: red;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	display: inline-block;
+	left: 0;
+	bottom: -15px
+}*/
+
+.anchor-tag {
+	height: 300px;
+	width: 100%;
+}
+
+.advance-section p {
+	color: white;
+	padding: 3px 0 0 10px;
+	margin: 0;
+}
+
+#fb-icon {
+	width: 116%;
+	margin-bottom: -2px;
+}
+
+#ig-icon {
 	width: 100%;
 }
 
 #sc-icon {
-	width: 200%;
+	width: 180%;
+	margin-bottom: -15px;
 }
 
 .sc-embed {
@@ -128,7 +190,13 @@ body {
 	margin-bottom: 20px;
 }*/
 
-.music-header p {
+.page-section-wrap {
+  display: inline-block;
+  background-color: black;
+  padding: 20% 0 45% 0;
+}
+
+.page-section-header {
 	box-sizing: border-box;
 	margin-right: -10px;
 	clear: both;
@@ -146,21 +214,32 @@ body {
 	margin: 10px 10px 20px 10px;
 }
 
+/*--------------------*/
 /*###### BIO #######*/
+/*--------------------*/
+
+
+#bio.page-section {
+	background-color: black;
+/*	padding-bottom: 50px;*/
+	padding-bottom: 47%;
+	top: 100%;
+}
+
 
 .bio-container {
 	width: 100%;
 	display: inline-block;
+	padding-bottom: 39%;
 }
 
 .bio-content {
-	float: left;
 	width: 100%;
 	margin: 15px 0 15px 0;
 	padding: 0 10px;
 	box-sizing: border-box;
 
-	text-align: center;
+	text-align: left;
 	line-height: 18px;
 	color: white;
 	font-weight: lighter;
@@ -169,8 +248,9 @@ body {
 }
 
 .bio-profile-pic {
-	float: left;
-	width: 100%;
+	float: right;
+	width: 50%;
+	margin: 10px;
 }
 
 .bio-profile-pic img {
@@ -178,44 +258,31 @@ body {
 }
 
 
+/*--------------------*/
+/*###### MUSIC #######*/
+/*--------------------*/
 
-
-
-.page-section {
-	background-color: black;
-	padding-bottom: 50px;
+#music.page-section {
+	top: 200%;
 }
 
-.video-area-container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 5% 0 0 0;
-	box-sizing: border-box;
+#music-wrap.page-section-wrap {
+	display: block;
 }
 
-.video-wrap {
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
+#music-wrap {
+	background-color: darkgrey;
 }
 
 
-.video--home {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
-
-.music-container {
-	width: 100%;
-}
+/*GOOD*/
 
 @media (min-width: 786px) {
+
+	.header-nav-container {
+		box-shadow: 0px 6px 14px rgb(70,70,70);
+	}
 
 	.site-header {
 		padding: 0;
@@ -227,7 +294,7 @@ body {
 		box-sizing: border-box;
 		margin-right: -40px;
 
-		font-size: 350%;
+		font-size: 300%;
 		text-align: center;
 		text-shadow: none;
 		letter-spacing: 40px;
@@ -240,6 +307,7 @@ body {
 	.nav-container {
 		padding: 0 30%;
 		/*background-color: black;*/
+		background-color: white;
 	}
 
 	.nav-list {
@@ -250,8 +318,10 @@ body {
 	}
 
 	.nav-list-item {
+		padding-top: 0;
 		display: inline-block;
 		border: none;
+		color: black;
 		
 		transition: color 0.2s linear;
 		text-align: left;
@@ -284,10 +354,39 @@ body {
 		height: auto;
 	}
 
+	.nliten-logo {
+		width: 80px;
+		float: left;
+	}
+
+	.page-section-wrap {
+		padding-top: 20px;
+	}
+
+	.bio-container {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}	
+
+	.bio-content {
+		float: none;
+		width: 100%;
+		text-align: left;
+		line-height: 22px;
+		letter-spacing: 1px;
+	}
+
+	.bio-profile-pic {
+		width: 45%;
+		float: right;
+		margin-left: 10px;
+	}
+/*
 	.video-area-container {
 		width: 70%
 	}
-
+*/
 
 	.sc-embed {
 		width: 40%;
@@ -303,16 +402,14 @@ body {
 		margin-bottom: 20px;
 	}
 
-	.bio-container {
-		width: 70%;
-		margin: 0 auto;
-		display: block;
-	}
 
-	.bio-profile-pic {
-		margin-bottom: 30px;
+}
+
+@media (min-width: 960px) {
+
+	.site-header p {
+		font-size: 350%;
 	}
-	
 
 }
 

@@ -6,6 +6,7 @@
 	<!-- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200' rel='stylesheet' type='text/css'>
 
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="../styles/home.css">
@@ -15,72 +16,89 @@
 	<script type="text/javascript" src="../scripts/main.js"></script>
 </head>
 <body>
+	<div class="background-video"></div>
 	<div class="site-container">
-		<div class="site-header">
-			<p>nliten</p>
-			<div class="nav-hamburger">
-				<span class="nav-hamburger-line"></span>
-				<span class="nav-hamburger-line"></span>
-				<span class="nav-hamburger-line"></span>
-				<span class="nav-hamburger-line"></span>
+		<div class="header-nav-container">
+			<div class="site-header">
+				<p><span>
+					<img class="nliten-logo" src="../images/nliten-logo.png">
+				</span>nliten</p>
+				<div class="nav-hamburger">
+					<span class="nav-hamburger-line"></span>
+					<span class="nav-hamburger-line"></span>
+					<span class="nav-hamburger-line"></span>
+					<span class="nav-hamburger-line"></span>
+				</div>
+			</div>
+
+			<div class="nav-container">
+				<ul class="nav-list">
+					<li class="nav-list-item"><a href="#bio-anchor">Bio</a></li>
+					<li class="nav-list-item"><a href="#music-anchor">Music</a></li>
+					<li class="nav-list-item"><a href="#photo-anchor">Photo</a></li>
+					<li class="nav-list-item nav-list-item-line"></li>
+					<li class="nav-list-item">
+						<ul class="nav-list-social">
+							<li class="nav-list-social-item">
+								<a href="https://www.facebook.com/TheRealNliteN" target="_blank">
+									<img id="fb-icon" src="../images/facebook-icon-black.png">
+								</a>
+							</li>
+							<li class="nav-list-social-item">
+								<a href="https://instagram.com/nlitenmusic/" target="_blank">
+									<img id="ig-icon" src="../images/instagram-icon-black.png">
+								</a>
+							</li>
+							<li class="nav-list-social-item">
+								<a href="https://soundcloud.com/the-real-nliten" target="_blank">
+									<img id="sc-icon" src="../images/soundcloud-icon-black.png">
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
-
-		<div class="nav-container">
-			<ul class="nav-list">
-				<li class="nav-list-item">Bio</li>
-				<li class="nav-list-item">Music</li>
-				<li class="nav-list-item">Photo</li>
-				<li class="nav-list-item nav-list-item-line"></li>
-				<li class="nav-list-item">
-					<ul class="nav-list-social">
-						<li class="nav-list-social-item">
-							<a href="https://www.facebook.com/TheRealNliteN" target="_blank">
-								<img id="fb-icon" src="../images/facebook-icon-white.png">
-							</a>
-						</li>
-						<li class="nav-list-social-item">
-							<a href="https://instagram.com/nlitenmusic/" target="_blank">
-								<img id="ig-icon" src="../images/instagram-icon-white.png">
-							</a>
-						</li>
-						<li class="nav-list-social-item">
-							<a href="https://soundcloud.com/the-real-nliten" target="_blank">
-								<img id="sc-icon" src="../images/soundcloud-icon-white.png">
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		
-		<div id="home" class="page-section">
-			<div class="video-area-container">
+					<!-- <div class="video-area-container">
 				<div class="video-wrap">
 					<iframe id="ytplayer" class="video--home" type="text/html" src="http://www.youtube.com/embed/jYdaQJzcAcw?autoplay=0"
   					frameborder="0"/></iframe>
 				</div>
+			</div> -->
+		<span id="bio-anchor" class="anchor-tag"></span>
+		<div id="bio" class="page-section">
+			<div id="bio-wrap" class="page-section-wrap">
+				<p class="page-section-header">nliten biography</p>
+				<div class="bio-container">
+					<p class="bio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur non hic quo odio error, incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Hic, iusto tempore!incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur non hic quo odio error, incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Hic, iusto tempore!incidunt<img class="bio-profile-pic" src="../images/bio-profile-pic.jpg"> voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur non hic quo odio error, incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Hic, iusto tempore!incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur non hic quo odio error, incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Hic, iusto tempore!incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga.</p>
+				</div>
 			</div>
+<!-- 
+			<div class="advance-section">
+				<a href="#bio-anchor"><p>continue</p></a>
+			</div> -->
+		</div>
 
-			<div class="bio-container">
-				<p class="bio-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur non hic quo odio error, incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga. Hic, iusto tempore!incidunt voluptas aperiam voluptate mollitia, maiores cupiditate nam rem doloribus animi fuga.</p>
-				<img class="bio-profile-pic" src="../images/bio-profile-pic.jpg">
-			</div>
+		<span id="music-anchor" class="anchor-tag"></span>
+		<div id="music" class="page-section">
+			<div id="music-wrap" class="page-section-wrap">
+				<p class="page-section-header">nliten music</p>
+				<div class="music-container">
+					<iframe id="sc-embed1" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202513162&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-			<div id="music" class="music-container">
-				<div class="music-header">
-					<p>Nliten Music</p>
+					<iframe id="sc-embed2" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/210447241&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+<!-- 
+					<iframe id="sc-embed3" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194595419&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+					<iframe id="sc-embed4" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208447662&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>  -->
+		
 				</div>
 
-				<iframe id="sc-embed1" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202513162&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-				<iframe id="sc-embed2" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/210447241&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-				<iframe id="sc-embed3" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194595419&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-				<iframe id="sc-embed4" class="sc-embed" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208447662&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
-
+<!-- 
+			<div class="advance-section">
+				<a href="#music-anchor"><p>continue</p></a>
+			</div> -->
 		</div>
 
 	</div>

@@ -22,11 +22,14 @@ module.toggleMenu = function() {
 module.eventHandlers = function() {
 	_el.$hamburger.on('click', module.toggleMenu);
 	// $(window).scroll(module.parallax);
+	_el.$navItems.on('click', module.toggleMenu);
 };
 
 module.init = function() {
 	_el.$navList = $('.nav-list');
+	_el.$navItems = _el.$navList.children();
 	_el.$hamburger = $('.nav-hamburger');
+	_el.$advanceSection = $('.advance-section');
 
 	// module.animateNav();
 	module.eventHandlers();
