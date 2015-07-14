@@ -16,7 +16,9 @@ module.animateNav = function() {
 };
 
 module.toggleMenu = function() {
-	_el.$navList.slideToggle(300);
+	if ( $(window).width() < 768 ) {
+		_el.$navList.slideToggle(300);
+	}
 };
 
 module.eventHandlers = function() {
