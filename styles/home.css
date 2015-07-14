@@ -20,11 +20,24 @@ body {
 	display: inline-block;
 }
 
-.page-section { 
+.site-container--offset {
 	position: absolute;
+	top: 100%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.page-section { 
+/*	position: absolute;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	right: 0;*/
+	float: left;
+	overflow: auto;
+	width: 100%;
+	padding-top: 60px;
+	margin-top: -60px;
 }
 
 .header-nav-container {
@@ -33,6 +46,7 @@ body {
 	z-index: 2;
 	background-color: white;
 	top: 0;
+	box-shadow: 0 2px 5px darkorange;
 }
 
 .site-header {
@@ -47,6 +61,11 @@ body {
 	width: 45px;
 	vertical-align: middle;
 	margin-left: 10px;
+}
+
+.nliten-logo-wrap {
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .site-header p {
@@ -191,9 +210,10 @@ body {
 }*/
 
 .page-section-wrap {
-  display: inline-block;
-  background-color: black;
-  padding: 20% 0 45% 0;
+	display: inline-block;
+/*	background-color: black;*/
+	padding: 20px 0 0 0;
+	padding-bottom: 100px;
 }
 
 .page-section-header {
@@ -220,17 +240,20 @@ body {
 
 
 #bio.page-section {
-	background-color: black;
+	
 /*	padding-bottom: 50px;*/
-	padding-bottom: 47%;
-	top: 100%;
 }
 
+#bio-wrap {
+	background-image: url('../images/nliten-bio-backdrop.jpg');
+	background-size: cover;
+	background-position: center;
+	background-opacity: 0.5;
+}
 
 .bio-container {
 	width: 100%;
 	display: inline-block;
-	padding-bottom: 39%;
 }
 
 .bio-content {
@@ -238,18 +261,19 @@ body {
 	margin: 15px 0 15px 0;
 	padding: 0 10px;
 	box-sizing: border-box;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 	text-align: left;
-	line-height: 18px;
+	line-height: 20px;
 	color: white;
 	font-weight: lighter;
-	font-size: 85%;
+	font-size: 100%;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .bio-profile-pic {
 	float: right;
-	width: 50%;
+	width: 70%;
 	margin: 10px;
 }
 
@@ -263,7 +287,7 @@ body {
 /*--------------------*/
 
 #music.page-section {
-	top: 200%;
+/*	top: 200%;*/
 }
 
 #music-wrap.page-section-wrap {
@@ -281,7 +305,9 @@ body {
 @media (min-width: 786px) {
 
 	.header-nav-container {
-		box-shadow: 0px 6px 14px rgb(70,70,70);
+		/*box-shadow: 0px 6px 14px rgb(70,70,70);*/
+		box-shadow: 0 2px 5px darkorange;
+
 	}
 
 	.site-header {
@@ -300,12 +326,17 @@ body {
 		letter-spacing: 40px;
 	}
 
+	.nliten-logo-wrap {
+		display: block;
+		margin-right: 0;
+	}
+
 	.nav-hamburger {
 		display: none;
 	}
 
 	.nav-container {
-		padding: 0 30%;
+		padding: 0 20%;
 		/*background-color: black;*/
 		background-color: white;
 	}
@@ -322,13 +353,18 @@ body {
 		display: inline-block;
 		border: none;
 		color: black;
+		padding: 0 22px 5px 22px;
 		
-		transition: color 0.2s linear;
+		
 		text-align: left;
 	}
 
-	.nav-list-item:hover {
-		color: red;
+	.nav-list-item a {
+		transition: color 0.2s linear;
+	}
+
+	.nav-list-item a:hover {
+		color: darkorange;
 	}
 
 	.nav-list-item.nav-list-item-line {
@@ -360,7 +396,7 @@ body {
 	}
 
 	.page-section-wrap {
-		padding-top: 20px;
+		padding-top: 50px;
 	}
 
 	.bio-container {
@@ -380,13 +416,21 @@ body {
 	.bio-profile-pic {
 		width: 45%;
 		float: right;
-		margin-left: 10px;
+		margin: 20px;
 	}
 /*
 	.video-area-container {
 		width: 70%
 	}
 */
+	#facebook-icon {
+		width: 116%;
+		margin-bottom: -2px;
+	}
+
+	#sc-icon {
+		margin-bottom: -10px;
+	}
 
 	.sc-embed {
 		width: 40%;
