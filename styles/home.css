@@ -180,6 +180,12 @@ body {
 	margin-bottom: -2px;
 }
 
+#twitter-icon {
+	width: 140%;
+	margin-bottom: -5px
+}
+
+
 #ig-icon {
 	width: 100%;
 }
