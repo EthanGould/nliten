@@ -127,6 +127,8 @@ body {
 	border-top: 1px solid black;
 }
 
+
+
 .nav-list-item  a {
 	color: black;
 	font-family: 'Arimo', sans-serif;
@@ -243,18 +245,18 @@ body {
 
 .section-indicator {
 	text-align: center;
-	width: 45%;
+	width: 12%;
 	color: white;
-	/*margin: 0 42.5%;*/
-	margin: 0 27.5%;
+	margin: 0 44%;
+/*	margin: 0 27.5%;*/
 	position: absolute;
 	top: -100px;
-	font-family: 'Ubuntu', sans-serif;
+/*	font-family: 'Ubuntu', sans-serif;
 	padding: 15px;
 	border: 2px solid white;
 	border-radius: 5px;
 	font-size: 24px;
-	background-color: rgba(220,115,0,0.5);
+	background-color: rgba(220,115,0,0.5);*/
 
 	animation-name: bounceHover;
 	animation-duration: 0.5s;
@@ -398,10 +400,14 @@ body {
 		display: inline-block;
 		border: none;
 		color: black;
-		padding: 0 19px 5px 18px;
+		padding: 0 0 5px 16px;
 		
 		
 		text-align: left;
+	}
+
+	.nav-list-item:first-child {
+		padding-left: 0;
 	}
 
 	.nav-list-item a {
@@ -454,8 +460,8 @@ body {
 	}
 
 	.section-indicator {
-		width: 15%;
-		margin: 0 42.5%;
+		width: 4%;
+		margin: 0 48%;
 	}
 
 	.bio-container {
