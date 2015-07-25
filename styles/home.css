@@ -219,7 +219,7 @@ body {
 }*/
 
 .page-section-wrap {
-	display: inline-block;
+	/*display: inline-block;*/
 /*	background-color: black;*/
 	padding: 20px 0 0 0;
 	padding-bottom: 100px;
@@ -268,14 +268,7 @@ body {
 /*###### BIO #######*/
 /*--------------------*/
 
-
-#bio.page-section {
-	
-/*	padding-bottom: 50px;*/
-}
-
 #bio-wrap {
-	/*background-image: url('../images/nliten-bio-backdrop.jpg');*/
 	background-color: black;
 	background-size: cover;
 	background-position: center;
@@ -317,6 +310,61 @@ body {
 /*###### MUSIC #######*/
 /*--------------------*/
 
+#music-wrap.page-section-wrap {
+	display: block;
+}
+
+#music-wrap {
+	background-color: darkgrey;
+	overflow: auto;
+}
+
+/*--------------------*/
+/*###### SOCIAL #######*/
+/*--------------------*/
+
+#social-wrap {
+	background-color: rgb(200, 99, 0);
+	overflow: auto;
+}
+
+.show-time-container {
+	width: 90%;
+	margin: 0 5% 20px 5%;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+
+	text-align: left;
+	background-color: rgb(251, 150, 0);
+	font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+	color: white;
+}
+
+.show-time-header {
+	text-align: left;
+}
+
+.show-time {
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
+.show-times-label {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: black;
+}
+
+.show-times-list {
+	margin-left: 20px;
+}
+
+#twitter-widget-0 {
+	width: 100% !important;
+}
+
 .twitter-embed-container {
 	padding: 0 10px;
 	box-sizing: border-box;
@@ -325,19 +373,6 @@ body {
 
 .twitter-timeline {
 	width: 100%;
-}
-
-#music.page-section {
-/*	top: 200%;*/
-}
-
-#music-wrap.page-section-wrap {
-	display: block;
-}
-
-#music-wrap {
-	background-color: darkgrey;
-	overflow: auto;
 }
 
 
@@ -508,8 +543,12 @@ body {
 	}
 
 	.twitter-embed-container {
-		width: 30%;
-		float: left;
+		width: 45%;
+		float: right;
+	}
+
+	#twitter-widget-0 {
+		width: 100%;
 	}
 
 	.music-container {
@@ -530,6 +569,18 @@ body {
 	#sc-embed1,
 	#sc-embed2 {
 		margin-bottom: 20px;
+	}
+
+	
+/*--------------------*/
+/*###### SOCIAL #######*/
+/*--------------------*/
+
+	.show-time-container {
+		width: 50%;
+		padding: 20px 20px 20px 50px;
+		margin: 0 0 0 10px;
+		
 	}
 
 
