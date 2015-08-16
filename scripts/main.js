@@ -37,6 +37,11 @@ module.init = function() {
 	module.eventHandlers();
 };
 
-$(document).ready(function(){
+// $(document).ready(function(){
+// 	module.loadingOverlay();
+// });
+
+$(window).load( function() {
 	module.init();
+	$('.loading-overlay').hide();
 });
