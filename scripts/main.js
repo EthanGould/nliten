@@ -1,15 +1,17 @@
 var module = {};
 var _el = {};
-// var bioOffset = -0.2 * ($(window).height());
-// module.parallax = function() {
-// 	var currentScrollTop = parseFloat( _el.$bioImage.css('top') );
-// 	var scrollSpeed = ( -(bioOffset + window.pageYOffset/0.3) );
-// 	console.log(scrollSpeed);
-// 	var newTop = scrollSpeed + 'px'	
-// 	console.log(newTop);
-// 	_el.$bioImage.css('top', newTop );
+var frontOffset = -0.2 * ($(window).height());
+module.parallax = function() {
+	var currentScrollTop = window.pageYOffset;
+	// console.log(currentScrollTop);
+	var parallaxScrollSpeed = ( currentScrollTop*2 );
+	// console.log(parallaxScrollSpeed);
+	var newTop = parseFloat( parallaxScrollSpeed );
+	console.log( (-1 * newTop) );
+	$('.top-section').css( 'top', -newTop );
+	console.log( $('.top-section').css('top') );
 
-// };
+};
 
 module.animateNav = function() {
 	// _el.$hamburger.
@@ -23,8 +25,13 @@ module.toggleMenu = function() {
 
 module.eventHandlers = function() {
 	_el.$hamburger.on('click', module.toggleMenu);
-	// $(window).scroll(module.parallax);
 	_el.$navItems.on('click', module.toggleMenu);
+
+	$(window).scroll( function() {
+		if ( $(window).width() > 768 ) {
+			module.parallax();
+		}
+	});
 };
 
 module.init = function() {
@@ -32,16 +39,15 @@ module.init = function() {
 	_el.$navItems = _el.$navList.children();
 	_el.$hamburger = $('.nav-hamburger');
 	_el.$advanceSection = $('.advance-section');
-
-	// module.animateNav();
 	module.eventHandlers();
 };
 
-// $(document).ready(function(){
-// 	module.loadingOverlay();
-// });
-
-$(window).load( function() {
+$(document).ready( function() {
 	module.init();
-	$('.loading-overlay').hide();
+	setTimeout( function() {
+		$('.loading-overlay').hide();
+	}, 7000);
 });
+
+
+
