@@ -44,9 +44,17 @@ module.init = function() {
 
 $(document).ready( function() {
 	module.init();
-	setTimeout( function() {
+
+	var url = window.location.href,
+		regex = new RegExp( 'home.html' );
+
+	if ( regex.test( url ) ) {
+		setTimeout( function() {
+			$('.loading-overlay').hide();
+		}, 2000);
+	} else {
 		$('.loading-overlay').hide();
-	}, 7000);
+	}
 });
 
 
