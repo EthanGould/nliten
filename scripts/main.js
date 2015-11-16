@@ -3,13 +3,9 @@ var _el = {};
 var frontOffset = -0.2 * ($(window).height());
 module.parallax = function() {
 	var currentScrollTop = window.pageYOffset;
-	// console.log(currentScrollTop);
 	var parallaxScrollSpeed = ( currentScrollTop*2 );
-	// console.log(parallaxScrollSpeed);
 	var newTop = parseFloat( parallaxScrollSpeed );
-	console.log( (-1 * newTop) );
 	$('.top-section').css( 'top', -newTop );
-	console.log( $('.top-section').css('top') );
 
 };
 

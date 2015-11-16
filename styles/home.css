@@ -19,82 +19,29 @@ body {
 .loading-overlay-image {
 	display: block;
 	margin: 0 auto;
-/*	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;*/
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	margin-top: 20%;
 	box-shadow: 0 0 25px orange;
-
-	/*animation-name: pulseImage;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;*/
 }
 
 .top-section {
-/*	margin-top: 0;*/
-	/*background-color: black;*/
-	position: fixed;
+/*	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: -1;
-/*	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	width: 150%;
-
-/*	position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;*/
+	z-index: -1;*/
+	width: 100%;
 }
-
-/*.parallax {
-	perspective: 1px;
-	height: 100px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.parallax__layer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-.parallax__layer--base {
-	transform: translateZ(0);
-}
-.parallax__layer--back {
- 	transform: translateZ(-1px);
-}*/
 
 .site-container {
 	display: inline-block;
 }
 
-.site-container--offset {
-	position: absolute;
-	top: 100%;
-	bottom: 0;
-	right: 0;
-	left: 0;
-}
 
 .page-section { 
-/*	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;*/
 	float: left;
 	overflow: auto;
 	width: 100%;
@@ -237,19 +184,6 @@ body {
 	display: inline-block;
 }
 
-/*.advance-section {
-	width: 75px;
-	height: 25px;
-	margin: 0 auto;
-	background-color: red;
-	position: absolute;
-	z-index: 1;
-	right: 0;
-	display: inline-block;
-	left: 0;
-	bottom: -15px
-}*/
-
 .anchor-tag {
 	height: 300px;
 	width: 100%;
@@ -288,23 +222,7 @@ body {
 	box-sizing: border-box;
 }
 
-/*.sc-embed {
-	width: 48.5%;
-}
-
-#sc-embed1,
-#sc-embed3 {
-	margin: 0 0.5%;
-}
-
-#sc-embed1,
-#sc-embed2 {
-	margin-bottom: 20px;
-}*/
-
 .page-section-wrap {
-	/*display: inline-block;*/
-/*	background-color: black;*/
 	padding: 20px 0 0 0;
 	padding-bottom: 100px;
 }
@@ -332,15 +250,8 @@ body {
 	width: 12%;
 	color: white;
 	margin: 0 44%;
-/*	margin: 0 27.5%;*/
 	position: absolute;
 	top: -100px;
-/*	font-family: 'Ubuntu', sans-serif;
-	padding: 15px;
-	border: 2px solid white;
-	border-radius: 5px;
-	font-size: 24px;
-	background-color: rgba(220,115,0,0.5);*/
 
 	animation-name: bounceHover;
 	animation-duration: 0.5s;
@@ -412,7 +323,6 @@ body {
 .photo-section-photo-wrap {
 	width: 100%;
 	float: left;
-	/*margin: 0 0 10px 1%;*/
 }
 
 
@@ -503,7 +413,12 @@ body {
 	text-decoration: underline;
 }
 
-/*GOOD*/
+
+
+/*--------------------*/
+/*# Tablet Breakpoint #*/
+/*--------------------*/
+
 
 @media (min-width: 786px) {
 
@@ -740,6 +655,23 @@ body {
 
 	.site-header p {
 		font-size: 350%;
+	}
+
+	.site-container--offset {
+		position: absolute;
+		top: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+
+	.top-section {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
 	}
 
 }
